@@ -52,7 +52,7 @@ export default class List extends React.Component {
         />
     );
            
-    filterData = (data) => data.slice(0,1).concat(data.filter((item) => moment(item.dt * 1000).format('LT') == '13:00'));    
+    filterData = (data) => data.slice(0,1).concat(data.filter((item) => moment(item.dt * 1000).format('LT') == '13:00'));  // on filtre sur la temp de chaque jour à midi
 
     render() {
         if(this.state.report === null)

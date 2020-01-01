@@ -76,9 +76,6 @@ export default {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        
-        
-     
     },
     ViewFirst2:{
         flex :1,

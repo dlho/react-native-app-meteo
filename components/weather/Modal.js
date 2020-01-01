@@ -116,7 +116,7 @@ export class WeatherModal extends React.Component {
                     onPress={() => {
                         this.setModalVisible(true);
                     }}>
-                    <Text>Détails</Text>
+                    <Text style={{ fontSize: 20 }}>Détails</Text>
                 </TouchableHighlight>
             </View>
         );

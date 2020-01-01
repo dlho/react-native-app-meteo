@@ -78,14 +78,15 @@ export default class WeatherRow extends React.Component{
     }
 
     render() {
+        //console.log('Row(render)', this.props.index);
+        //<Text style={globalstyle.dayFirst}>{this.date()}</Text>
         if(this.props.index === 0) {
             return(            
                 <Card>
                     <CardItem style={globalstyle.CardFirst}>
                         <View style={globalstyle.ViewFirst2}>
                             <View>   
-                                <Text style={globalstyle.toDay}>Aujourd'hui</Text>
-                                <Text style={globalstyle.dayFirst}>{this.date()}</Text>
+                                <Text style={globalstyle.toDay}>En ce moment</Text>
                             </View>
                             <View style={globalstyle.ViewFirst}>                                               
                                 {this.icon(140)}
@@ -99,7 +100,7 @@ export default class WeatherRow extends React.Component{
             )
         } else {
             return(                
-                <Card >
+                <Card>
                     <CardItem style={globalstyle.Card}>
                         <View style={globalstyle.View}>
                             <View> 
