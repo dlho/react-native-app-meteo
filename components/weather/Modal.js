@@ -87,11 +87,11 @@ export class WeatherModal extends React.Component {
                             renderItem={({ item, index }) => 
                             <View>
                                 <Card>
-                                    <CardItem style={{ backgroundColor: '#37474f' }}>
+                                    <CardItem style={{ backgroundColor: '#74bbe4' }}>
                                         <View style={globalstyle.CardModal}>
-                                            <Text style={{ fontSize: 20, color: '#FFF' }}>{moment(item.dt * 1000).format('LT')}</Text>
+                                            <Text style={{ fontSize: 20, color: '#000000' }}>{moment(item.dt * 1000).format('LT')}</Text>
                                             {this.icon(50, item)}
-                                            <Text style={{ fontSize: 30, color: '#FFF' }}>{Math.round(item.main.temp)}°C</Text>
+                                            <Text style={{ fontSize: 30, color: '#000000' }}>{Math.round(item.main.temp)}°C</Text>
                                         </View>
                                     </CardItem>
                                 </Card>
@@ -105,7 +105,7 @@ export class WeatherModal extends React.Component {
                                     this.setModalVisible(!this.state.modalVisible);
                                 }}
                                 title="Retour"
-                                color="#62727b"
+                                color="#004c8c"
                                 accessibilityLabel="Météo de la semaine"
                             />
                         </View>
@@ -116,7 +116,7 @@ export class WeatherModal extends React.Component {
                     onPress={() => {
                         this.setModalVisible(true);
                     }}>
-                    <Text style={{ fontSize: 20 }}>Détails</Text>
+                    <Text style={{ fontSize: 20, color: '#004c8c' }}>Détails</Text>
                 </TouchableHighlight>
             </View>
         );

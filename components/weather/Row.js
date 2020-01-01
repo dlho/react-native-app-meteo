@@ -87,12 +87,12 @@ export default class WeatherRow extends React.Component{
                         <View style={globalstyle.ViewFirst2}>
                             <View>   
                                 <Text style={globalstyle.toDay}>En ce moment</Text>
-                            </View>
-                            <View style={globalstyle.ViewFirst}>                                               
-                                {this.icon(140)}
                                 <Text style={globalstyle.tempFirst}>
                                     {Math.round(this.props.data.main.temp)}°C
-                                </Text>                        
+                                </Text>   
+                            </View>
+                            <View style={globalstyle.ViewFirst}>                                               
+                                {this.icon(140)}                     
                             </View>
                         </View>
                     </CardItem>

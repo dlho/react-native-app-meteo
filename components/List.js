@@ -60,9 +60,9 @@ export default class List extends React.Component {
             if(this.state.error === true){
                 return (
                     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                         {this.errorIcon(150)}
+                        {this.errorIcon(150)}
                         <View>
-                            <Text style={{fontSize: 20, margin : 20}}>Veuillez inserer une Ville valide</Text>
+                            <Text style={{fontSize: 20, margin : 20}}>Veuillez inserer une ville valide</Text>
                         </View>                       
                         <View>
                             <Button
@@ -79,7 +79,7 @@ export default class List extends React.Component {
             }
         } else { 
             return(
-                <View style={{backgroundColor: '#263238'}}>
+                <View style={{backgroundColor: '#55555'}}>
                     <FlatList
                         data = {this.filterData(this.state.report.list)}                        
                         renderItem={(item, index) => this.renderItem(item, index)}

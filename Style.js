@@ -1,7 +1,7 @@
 //----- dark mode ----//
 const fontColorWhite = '#FFF'
 //---- basic mode ----//
-const blue = '#000a12'
+const blue = '#004c8c'
 export default {
     color : blue,
     container :{
@@ -14,8 +14,7 @@ export default {
     title : {
         fontSize: 30,
         color: fontColorWhite,
-       // fontFamily : 'open-sans-bold'
-        
+        //fontFamily : 'open-sans-bold'
     },
    
     header :{
@@ -34,11 +33,11 @@ export default {
         flex: 1,
         flexDirection: 'row', 
         justifyContent: "space-between",
-        backgroundColor: '#37474f',
+        backgroundColor: '#74bbe4',
         color: 'blue'
     },
     day:{
-        color: '#FFF',
+        color: 'black',
         fontSize: 15,
     },
     dayFirst:{
@@ -47,18 +46,19 @@ export default {
     },
     temp:{
         fontSize: 20,
-        color: '#FFF',
+        color: 'black',
         fontWeight: 'bold'
     },
     tempFirst:{
-        marginTop: -20,
+        marginTop: 20,
+        marginLeft: 20,
         fontSize: 60,
-        color: 'white',
+        color: 'black',
         fontWeight: 'bold'
     },
     toDay:{
-        fontSize: 30,
-        color: 'white',
+        fontSize: 26,
+        color: 'black',
         fontWeight: 'bold'
     },
     TextBar:{
@@ -68,7 +68,7 @@ export default {
 
     },
     CardFirst:{
-        backgroundColor: '#102027',
+        backgroundColor: '#74bbe4',
         height: 300,
         
     },
@@ -85,7 +85,7 @@ export default {
        
     },
     Card:{
-        backgroundColor: '#37474f',
+        backgroundColor: '#74bbe4',
         margin: 0,
     },
     CardView:{
@@ -100,7 +100,7 @@ export default {
     ModalStyle: {
         justifyContent: 'space-around',
         margin: 30,
-        backgroundColor: 'rgba(0,0,0,.75)',
+        backgroundColor: 'rgba(0,76,140,.75)',
         borderRadius: 0
     },
     CardModal:{
@@ -108,17 +108,15 @@ export default {
         flexDirection : 'row',
         justifyContent : 'space-around',
         alignItems: 'center',
-        
-
     },
     TitleModal:{
         marginTop: 25,
-        color:'#FFF',
+        color:'#000000',
         fontSize:30,
-    //    fontWeight :'bold',
+        fontWeight :'bold',
     },
     ModalReturn: {
-     //   fontWeight :'bold',
+        //fontWeight :'bold',
         fontSize: 20,
        
     }

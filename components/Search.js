@@ -1,6 +1,6 @@
 import React from 'react'
 import globalstyle from '../Style'
-import {Button ,View, Image}from 'react-native'
+import {Button, View, Image}from 'react-native'
 import {Searchbar} from 'react-native-paper'
 import {createStackNavigator, createAppContainer} from 'react-navigation'
 import List from './List'
@@ -33,15 +33,17 @@ class Search extends React.Component {
         return(
             <View>
                 <Searchbar
-                    style ={{backgroundColor : '#819ca9', margin:5, }}
+                    style ={{backgroundColor : '#74bbe4', margin:5}}
                     placeholder="Rechercher"
                     onChangeText={(text) => this.setCity(text)}
                     value={this.state.city}
                 />
-                <Button style={{marginTop: 10}}
-                    color={globalstyle.color}
-                    onPress={() => this.submit()}
-                    title="Validez"/>
+                <View style={{margin:20}}>
+                    <Button
+                        color={globalstyle.color}
+                        onPress={() => this.submit()}
+                        title="Validez"/>
+                </View>
             </View>
         )
     }

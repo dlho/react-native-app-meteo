@@ -13,7 +13,7 @@ export default class About extends React.Component {
     render () {
         return (
             <View>
-                <ImageBackground source={require('./background/Blood.jpg')} style={{width: '100%',height:'100%'}}>
+                <ImageBackground source={require('./background/About.jpg')} style={{width: '100%',height:'100%'}}>
                     <View style={globalstyle.container}>
                         <Text style={globalstyle.title}>
                             Météo
