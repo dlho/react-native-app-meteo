@@ -104,13 +104,13 @@ export default class WeatherRow extends React.Component{
                     <CardItem style={globalstyle.Card}>
                         <View style={globalstyle.View}>
                             <View> 
-                                <Text  style={globalstyle.temp}>{this.day()}</Text>
+                                <Text style={globalstyle.temp}>{this.day()}</Text>
                                 <Text style={globalstyle.day}>{this.date()}</Text>
                                 <WeatherModal date={this.dates()} data_complete={this.props.data_complete} index={this.props.index}/>
                             </View>
                             <View>
                                 <View>{this.icon()}</View>                        
-                                <Text style={globalstyle.temp}>
+                                <Text style={globalstyle.temp2}>
                                     {Math.round(this.props.data.main.temp)}°C
                                 </Text>
                             </View>

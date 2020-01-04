@@ -49,6 +49,12 @@ export default {
         color: 'black',
         fontWeight: 'bold'
     },
+    temp2:{
+        marginTop: 15,
+        fontSize: 20,
+        color: 'black',
+        fontWeight: 'bold'
+    },    
     tempFirst:{
         marginTop: 20,
         marginLeft: 20,
@@ -69,7 +75,7 @@ export default {
     },
     CardFirst:{
         backgroundColor: '#74bbe4',
-        height: 300,
+        height: 250,
         
     },
     ViewFirst :{
@@ -100,7 +106,7 @@ export default {
     ModalStyle: {
         justifyContent: 'space-around',
         margin: 30,
-        backgroundColor: 'rgba(0,76,140,.75)',
+        backgroundColor: 'rgba(0,76,140,.85)',
         borderRadius: 0
     },
     CardModal:{

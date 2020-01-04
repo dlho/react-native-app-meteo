@@ -28,7 +28,7 @@ export default class List extends React.Component {
     }
 
     fetchWeather () {
-        axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${this.state.city},fr&mode.json&units=metric&appid=e25bc782a6fea11b21661aaf0cd88bcb`) 
+        axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&mode.json&units=metric&appid=e25bc782a6fea11b21661aaf0cd88bcb`) 
         .then((response) => {
                 this.setState({report: response.data})
             })
