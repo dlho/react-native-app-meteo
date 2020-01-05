@@ -1,11 +1,12 @@
 import React  from 'react'
-import {FlatList, Button, Text, Image} from 'react-native'
+import { FlatList, Button, Text, Image, View } from 'react-native'
 import globalstyle from '../Style'
 import WeatherRow from './weather/Row'
-import {ActivityIndicator , Colors} from 'react-native-paper'
+import { ActivityIndicator , Colors } from 'react-native-paper'
 import axios from 'axios'
 import moment from 'moment';
-import { View } from 'native-base';
+
+import { API_KEY } from '../utils/weatherApiKey';
 
 moment.locale('fr')
 
@@ -28,8 +29,8 @@ export default class List extends React.Component {
     }
 
     fetchWeather () {
-        axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&mode.json&units=metric&appid=e25bc782a6fea11b21661aaf0cd88bcb`) 
-        .then((response) => {
+        axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${this.state.city}&appid=${API_KEY}&mode.json&units=metric`)
+        .then((response) => {//console.log(response.data);
                 this.setState({report: response.data})
             })
         .catch(() => {
@@ -83,7 +84,10 @@ export default class List extends React.Component {
                     <FlatList
                         data = {this.filterData(this.state.report.list)}                        
                         renderItem={(item, index) => this.renderItem(item, index)}
-                        keyExtractor={item => item.dt_txt}          
+                        keyExtractor={(item, index) => {
+                            //console.log(`${item.dt_txt}`, `${index}`)
+                            return `${index}`;
+                        }}          
                     />            
                 </View>
             )

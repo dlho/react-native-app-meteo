@@ -1,7 +1,8 @@
+import React from 'react'
+import { DefaultTheme, BottomNavigation } from 'react-native-paper'
+
 import About from './About'
 import Search from './Search'
-import React from 'react'
-import { DefaultTheme, BottomNavigation } from 'react-native-paper';
 
 const theme = {
 	...DefaultTheme,
@@ -15,6 +16,7 @@ const theme = {
 };
 
 export default class Nav extends React.Component {
+
 	state = {
 		index: 0,
 		routes: [

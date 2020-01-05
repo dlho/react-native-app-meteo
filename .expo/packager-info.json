@@ -2,8 +2,8 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 10428,
-  "expoServerNgrokUrl": "https://jk-jkm.dlho.react-native-app-meteo.exp.direct",
-  "packagerNgrokUrl": "https://packager.jk-jkm.dlho.react-native-app-meteo.exp.direct",
-  "ngrokPid": 8764
+  "packagerPid": 1020,
+  "expoServerNgrokUrl": "https://rt-uja.dlho.react-native-app-meteo.exp.direct",
+  "packagerNgrokUrl": "https://packager.rt-uja.dlho.react-native-app-meteo.exp.direct",
+  "ngrokPid": 15880
 }

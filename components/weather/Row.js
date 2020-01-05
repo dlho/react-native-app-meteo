@@ -78,8 +78,8 @@ export default class WeatherRow extends React.Component{
     }
 
     render() {
-        //console.log('Row(render)', this.props.index);
-        //<Text style={globalstyle.dayFirst}>{this.date()}</Text>
+        //console.log('Row(render)', this.props.data);
+        //return(<Text style={globalstyle.dayFirst}>{this.date()}</Text>)
         if(this.props.index === 0) {
             return(            
                 <Card>
@@ -118,6 +118,6 @@ export default class WeatherRow extends React.Component{
                     </CardItem>
                 </Card>
             )
-        } 
+        }
     }    
 }
