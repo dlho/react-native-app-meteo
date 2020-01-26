@@ -87,7 +87,7 @@ export class WeatherModal extends React.Component {
                             renderItem={({ item, index }) => 
                             <View>
                                 <Card>
-                                    <CardItem style={{ backgroundColor: '#74bbe4' }}>
+                                    <CardItem style={{ backgroundColor: '#ced9df' }}>
                                         <View style={globalstyle.CardModal}>
                                             <Text style={{ fontSize: 20, color: '#000000' }}>{moment(item.dt * 1000).format('LT')}</Text>
                                             {this.icon(50, item)}

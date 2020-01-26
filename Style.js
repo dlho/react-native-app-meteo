@@ -33,7 +33,7 @@ export default {
         flex: 1,
         flexDirection: 'row', 
         justifyContent: "space-between",
-        backgroundColor: '#74bbe4',
+        backgroundColor: '#ced9df',
         color: 'blue'
     },
     day:{
@@ -74,7 +74,7 @@ export default {
 
     },
     CardFirst:{
-        backgroundColor: '#74bbe4',
+        backgroundColor: '#ced9df',
         height: 250,
         
     },
@@ -91,7 +91,7 @@ export default {
        
     },
     Card:{
-        backgroundColor: '#74bbe4',
+        backgroundColor: '#ced9df',
         margin: 0,
     },
     CardView:{
@@ -106,7 +106,7 @@ export default {
     ModalStyle: {
         justifyContent: 'space-around',
         margin: 30,
-        backgroundColor: 'rgba(0,76,140,.85)',
+        backgroundColor: 'rgba(75,82,87,.85)',
         borderRadius: 0
     },
     CardModal:{

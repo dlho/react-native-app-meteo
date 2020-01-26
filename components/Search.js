@@ -55,7 +55,7 @@ class Search extends React.Component {
     }
 
     submit() {        
-        this.props.navigation.navigate('Result', {city : this.state.city})
+        this.props.navigation.navigate('Result', {city : this.state.city.trim()})
     }
 
     render(){
@@ -63,7 +63,7 @@ class Search extends React.Component {
         return(
             <View>
                 <Searchbar
-                    style ={{backgroundColor : '#74bbe4', margin:5}}
+                    style ={{backgroundColor : '#ced9df', margin:5}}
                     placeholder="Rechercher"
                     onChangeText={(text) => this.setCity(text)}
                     value={this.state.city}

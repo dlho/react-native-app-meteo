@@ -80,7 +80,7 @@ export default class List extends React.Component {
             }
         } else { 
             return(
-                <View style={{backgroundColor: '#55555'}}>
+                <View style={{backgroundColor: '#FFFFFF'}}>
                     <FlatList
                         data = {this.filterData(this.state.report.list)}                        
                         renderItem={(item, index) => this.renderItem(item, index)}
